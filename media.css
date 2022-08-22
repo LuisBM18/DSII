@@ -1,0 +1,105 @@
+
+@media (max-width: 1200px){
+
+    html{
+        font-size: 55%;
+    }
+
+}
+
+/* ---------------------------- medidas para ancho de encabezados (max-width: 991px) ----------------------  */
+
+@media (max-width: 991px){
+
+    .encabezado1,
+    .encabezado2{
+        padding: 2rem;
+    }
+
+    .encabezado2 #menu{
+        display: initial;
+    }
+
+    .encabezado2 .barra{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        padding: 1rem 2rem;
+        display: none;
+        display: none;
+    }
+
+    .encabezado2 .barra.active{
+        display: initial;
+        
+    }
+
+    .encabezado2 .barra a{
+        font-size: 1.7rem;
+        display: block;
+        padding: 1rem;
+        margin: 1.5rem 0;
+        border: .1rem solid #fafafa;
+        border-left: 1rem solid var(--green);
+    }
+
+    section{
+
+
+        padding: 2rem;
+    }
+
+    .caja-productos{
+        grid-template-columns: .7fr 2fr;
+    }
+
+    .caja-productos .izq-col .caja a{
+        justify-content: space-between;
+    }
+
+    .caja-productos .der-col{
+        margin-top: 2rem;
+    }
+
+}
+
+/* ---------------------------- medidas para encabezado 1  (max-width: 768px) ----------------------  */
+
+@media (max-width: 768px){
+    
+    .encabezado1 .busqueda-caja-productos{
+        width: 30rem;
+    }
+
+}
+
+/* ---------------------------- medidas para encabezado 1  (max-width: 450px) ----------------------  */
+
+@media (max-width: 450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .encabezado1{
+        flex-flow: column;
+    }
+
+    .encabezado1 .busqueda-caja-productos{
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+
+    .footer .caja-productos .caja .icons a{
+        font-size: 1.5rem;
+    }
+
+    .credit , .credit span{
+        font-size: 1.5rem;
+    }
+
+
+}
